@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Karl Marx</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <script>
+         function reveal() {
+           var reveals = document.querySelectorAll(".reveal");
+           for (var i = 0; i < reveals.length; i++) {
+             var windowHeight = window.innerHeight;
+             var elementTop = reveals[i].getBoundingClientRect().top;
+             var elementVisible = 150;
+         
+             if (elementTop < windowHeight - elementVisible) {
+               reveals[i].classList.add("active");
+             } else {
+               reveals[i].classList.remove("active");
+             }
+           }
+         }
+         
+         window.addEventListener("scroll", reveal);
+         
+      </script>
+      <main>
+         <section>
+            <div class="container_header">
+               <img src="/marx.png" width="400" height="500">
+               <h1><a href="https://en.wikipedia.org/wiki/Karl_Marx">Karl<br>Marx</a></h1>
+            </div>
+            <div class="navbar">
+               <h2><a href="#who">WHO</a></h2>
+               <h2><a href="#when">WHEN</a></h2>
+               <h2><a href="#where">WHERE</a></h2>
+            </div>
+         </section>
+      </main>
+      <div class="article" id="who">
+         <div class="article_img reveal">
+            <img src="/books.png">
+            <p><span class="timeline_year">Karl Heinrich Marx</span> was a German philosopher, economist, historian, sociologist, political theorist,
+               journalist, critic of political economy, and socialist revolutionary. His best-known titles are the 1848
+               pamphlet The Communist Manifesto and the four-volume Das Kapital (1867–1883). Marx's political and
+               philosophical thought had enormous influence on subsequent intellectual, economic, and political
+               history. His name has been used as an adjective, a noun, and a school of social theory. 
+            </p>
+         </div>
+         <h2>WHO</h2>
+      </div>
+      <div class="article" id="when">
+         <div class="when reveal">
+            <div class="timeline_container">
+               <div class="timeline_upper">
+                  <ul class="timeline_list">
+                     <li><span class="timeline_year">1818</span> - Karl Marx is born</li>
+                     <li style="margin-left:210px"><span class="timeline_year">1844</span> - Marx meets Engels</li>
+                     <li style="margin-left:150px"><span class="timeline_year">1867</span> - Marx publish Das Kapital</li>
+                  </ul>
+               </div>
+               <div class="line">
+                  <img src="linea5.svg" style="width:80vw;">
+               </div>
+               <div class="timeline_lower">
+                  <ul class="timeline_list">
+                     <li><span class="timeline_year">1841</span> - Marx graduates from the university of Berlin</li>
+                     <li style="margin-left:70px"><span class="timeline_year">1848</span> - Marx & Engels publish The Communist Manifesto</li>
+                     <li style="margin-left:320px"><span class="timeline_year">1883</span> - Marx dies in London</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <h2>WHEN</h2>
+      </div>
+      <div class="article" id="where">
+         <div class="where reveal">
+            <div class="text_block four">
+               <h3>Paris</h3>
+               <p>Marx died on March 14 1883, when he was 64 after succumbing to a bout of bronchitis</p>
+            </div>
+            <div class="text_block one">
+               <h3>Trier</h3>
+               <p>On 5 May 1818 Marx was born here, from Heinrich Marx and Henriette Pressburg</p>
+            </div>
+            <img src="/map.svg" width="600" height="600">
+            <div class="text_block three">
+               <h3>Trier</h3>
+               <p>On 5 May 1818 Marx was born here, from Heinrich Marx and Henriette Pressburg</p>
+            </div>
+            <div class="text_block two">
+               <h3>Berlin</h3>
+               <p>In 1836, Marx is enrolled at the Frederick William University in Berlin as a law student</p>
+            </div>
+         </div>
+         <h2>WHERE</h2>
+      </div>
+      <script src="" async defer></script>
+   </body>
+</html>

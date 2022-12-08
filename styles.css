@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+section {
+    height: 100vh;
+    background-image: url("/topography.svg");
+}
+
+a{
+    color:inherit;
+}
+.container_header {
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_header h1 {
+    font-size: 90pt;
+    text-shadow: 4px 4px 0px #e7e7e7, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.container_header img {
+    width: 500px;
+    height: 600px;
+}
+
+.navbar h2 {
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 900;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, #0d61fe, #0d61fe 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 375ms ease;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar h2:hover {
+    background-position: 0 100%;
+    cursor: pointer;
+}
+
+.article {
+    height: 100vh
+}
+
+.article h2 {
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline #0d61fe;
+    margin: 0;
+    height: 10%;
+}
+
+.article_img p {
+    padding: 15px;
+    width: 40%;
+    text-align: left;
+    font-size: 2em;
+    transition: box-shadow 0.1s linear;
+    border-radius: 20px;
+}
+
+.article_img p:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.5s linear;
+
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.article_img {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    gap: 50px;
+    width: 100%;
+
+}
+
+
+.article_img img {
+    width: 650px;
+    height: 600px;
+}
+
+.timeline_container {
+    width: 100vw;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline_upper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+}
+
+.timeline_lower {
+    display: flex;
+    margin-left: 450px;
+}
+
+.timeline_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+}
+
+.when {
+    opacity: 0;
+    transform: translateY(350px);
+    transition: transform 1s ease;
+    display: flex;
+    align-items: center;
+    height: 90%;
+}
+
+.when.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline_lower li {
+    width: fit-content;
+}
+
+.timeline_lower li {
+    width: 250px;
+}
+
+.timeline_container li {
+    border-radius: 20px;
+    padding: 10px;
+    align-self: center;
+    border: 2px solid transparent;
+    margin: 8px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.timeline_container li:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    transform: scale(1.2);
+    border: 2px solid rgba(180, 180, 180, 0.123);
+    transition: all 0.2s linear;
+}
+
+.timeline_year {
+    color: #0d61fe;
+    font-weight: 900;
+}
+
+#where {
+    display: flex;
+    flex-direction: column;
+}
+
+.where {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_block {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border: 0.5px solid #0d61fe;
+    transition: transform 0.2s linear;
+    border-radius: 20px;
+
+}
+
+.text_block h3 {
+    margin-top: 10px !important;
+    text-align: center;
+    font-size: 25pt;
+    margin: 0;
+    color: #0d61fe;
+}
+
+.text_block p {
+    margin-top: 10px;
+    font-size: 20pt;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.four {
+    left: 300px;
+}
+
+.one {
+    top: 56vh;
+    left: 700px;
+}
+
+.three {
+    left: 1050px;
+    top: 0vh;
+}
+
+.two {
+    right: 450px;
+    top: 46vh;
+}
+
+.text_block:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+
+}
